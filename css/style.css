@@ -136,13 +136,14 @@ header.global { background:#0c0709 url(../img/bg-header.jpg) no-repeat center to
 		#testimonials h3 { color:#e2a80f; font:2.3em 'TradeGothicLTStdBoldRegular', Arial, sans-serif; margin:0; text-align:center; }
 		#testimonials h4 { font-size:0.8em; margin-top:-0.25em}
 		#testimonials li { height:300px; margin:0 10px 10px 0; overflow:hidden; position:relative; width:300px; }
-			#testimonials li blockquote.teaser { background:#000; background:rgba(0,0,0,0.8); bottom:0; color:#fff; height:3.5em; line-height:1.3em; padding:1em; position:absolute; } 
+			#testimonials li blockquote.teaser { background:#000; background:rgba(0,0,0,0.8); bottom:0; color:#fff; height:3.5em; line-height:1.3em; padding:1em; position:absolute; cursor:pointer; } 
 			#testimonials li blockquote.full { background:#e2a80f; color:#604600; height:100%; padding:25px; position:absolute; top:300px; width:250px;
 				-webkit-transition: top 1s ease;
 				-moz-transition: top 1s ease;
 				-o-transition: top 1s ease;
 				-ms-transition: top 1s ease;
-				transition: top 1s ease;}
+				transition: top 1s ease;
+				cursor:pointer;}
 			#testimonials li blockquote.active { top:0; }
 			#testimonials footer { background:url(../img/ornament.png) no-repeat center bottom; font:1.4em 'TradeGothicLTStdBoldRegular', Arial, sans-serif; padding:1em 0 1.5em; text-align:center; text-transform:uppercase}
 		
