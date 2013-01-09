@@ -101,6 +101,8 @@ header.global { background:#0c0709 url(../img/bg-header.jpg) no-repeat center to
 	/* SIGNUP & APP LINKS */
 	nav.signup { margin-left:27px; z-index:999 }
 		nav.signup li { margin-right:6px; }
+		nav.signup a { border: 0}
+		
 	
 #content-main { background:#f7f7f6; line-height:1.5em; padding-top:3em}
 	#identity h1 { font:3em 'TradeGothicLTStdBoldRegular', Arial, sans-serif; text-transform:uppercase; }
@@ -159,4 +161,5 @@ footer.global { padding:2em 0 3em}
 footer.global p { color:#e28603; font-size:0.8em; margin-top:0.6em }
 footer.global p a, footer.global p a:visited { color:#e28603; text-decoration:underline}
 footer.global nav.signup { margin-left:0}
+footer.global nav.signup a { border: 0}
 footer.global p a:hover { color:#fff; }
