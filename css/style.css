@@ -56,7 +56,7 @@ blockquote { border:0 }
 h1 { color:#e2a80f }
 hr { border:0; clear:both; margin:1em 0 }
 hr.divider { background:url(../img/divider.gif) no-repeat; height:42px; width:940px;}
-
+a img { border: 0}
 
 /*
 ----------------------------------------------------------
@@ -102,6 +102,7 @@ header.global { background:#0c0709 url(../img/bg-header.jpg) no-repeat center to
 	nav.signup { margin-left:27px; z-index:999 }
 		nav.signup li { margin-right:6px; }
 		nav.signup a { border: 0}
+		nav.signup img { border: 0}
 		
 	
 #content-main { background:#f7f7f6; line-height:1.5em; padding-top:3em}
