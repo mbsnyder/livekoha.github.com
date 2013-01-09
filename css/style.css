@@ -1,0 +1,162 @@
+/*
+---------------------
+01. General
+02. Global Classes
+03. Structure
+04. Navigation
+
+------------------------
+
+
+----------------------------------------------------------
+01. RESET/GENERAL
+---------------------------------------------------------- */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, fieldset, legend, label, table, header, footer, nav, section, figure { margin:0; padding:0; }
+ol, ul { list-style: none; }
+table { border-collapse:collapse; border-spacing:0; }
+header, footer, nav, section, article, hgroup, figure { display:block; }
+
+/* FONTS */
+@font-face {
+	font-family: 'TradeGothicLTStdBoldRegular';
+	src: url('../fonts/tradegothicltstd-bold-webfont.eot');
+	src: local('☺'), url('../fonts/tradegothicltstd-bold-webfont.woff') format('woff'), url('../fonts/tradegothicltstd-bold-webfont.ttf') format('truetype'), url('../fonts/tradegothicltstd-bold-webfont.svg#webfontYekKJyRj') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TradeGothicLTStdRegular';
+	src: url('../fonts/tradegothicltstd-webfont.eot');
+	src: local('☺'), url('../fonts/tradegothicltstd-webfont.woff') format('woff'), url('../fonts/tradegothicltstd-webfont.ttf') format('truetype'), url('../fonts/tradegothicltstd-webfont.svg#webfont0EC68Hwf') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TradeGothicLTStdBold';
+	src: url('../fonts/tradegothicltstd-bd2-webfont.eot');
+	src: local('☺'), url('../fonts/tradegothicltstd-bd2-webfont.woff') format('woff'), url('../fonts/tradegothicltstd-bd2-webfont.ttf') format('truetype'), url('../fonts/ttradegothicltstd-bd2-webfont.svg#webfontLCyUJ1sd') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TradeGothicLTStdCnBold';
+	src: url('../fonts/tradegothicltstd-bdcn20-webfont.eot');
+	src: local('☺'), url('../fonts/tradegothicltstd-bdcn20-webfont.woff') format('woff'), url('../fonts/tradegothicltstd-bdcn20-webfont.ttf') format('truetype'), url('../fonts/tradegothicltstd-bdcn20-webfont.svg#webfontYPITXSXP') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* GENERAL STYLES */
+body { background:#432600 url(../img/bg-wood.jpg) repeat; color:#666; font-family:"TradeGothicLTStdRegular", Arial, sans-serif; font-size:115%; font-weight:normal; text-align:center; }
+a:link { text-decoration:none; }
+blockquote { border:0 }
+h1 { color:#e2a80f }
+hr { border:0; clear:both; margin:1em 0 }
+hr.divider { background:url(../img/divider.gif) no-repeat; height:42px; width:940px;}
+
+
+/*
+----------------------------------------------------------
+02. GLOBAL CLASSES
+---------------------------------------------------------- */
+.clear { clear:both; }
+.icons { background-image:url(../img/icons.png); background-repeat:no-repeat; }
+.replace { text-indent:-9999px}
+.rounded { border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; }
+.shadow { box-shadow:1px 1px 5px rgba(0,0,0,0.2); -moz-box-shadow:1px 1px 5px rgba(0,0,0,0.2); -webkit-box-shadow:1px 1px 5px rgba(0,0,0,0.2); }
+.wrap { margin:0 auto; padding:0 10px; text-align:left; width:940px;}
+
+ul.inline li { display:inline; float:left; }
+ul.inline { display:block; float:none; overflow:hidden; }
+
+
+/*
+----------------------------------------------------------
+03. STRUCTURE
+---------------------------------------------------------- */
+header.global { background:#0c0709 url(../img/bg-header.jpg) no-repeat center top; height:515px; overflow:hidden}
+	header.global div.wrap { height:495px; padding-top:30px; position:relative}
+	header.global figure { position:absolute; right:0; bottom:0; }
+	#screenshot {
+		-moz-transform: rotate(-10deg) translate(-100px,350px);
+		-webkit-transform: rotate(-10deg) translate(-100px,350px);
+		-o-transform: rotate(-10deg) translate(-100px,350px);
+		-ms-transform: rotate(-10deg) translate(-100px,350px);
+		-webkit-transition: -webkit-transform 1s ease-in-out;
+	}
+	#screenshot.animate { 
+		-moz-transform: rotate(0deg) translate(20px,10px);
+		-webkit-transform: rotate(0deg) translate(20px,10px);
+		-o-transform: rotate(0deg) translate(20px,10px);
+		-ms-transform: rotate(0deg) translate(20px,10px);
+		transform: rotate(0deg) translate(20px,10px);
+	}
+	header.global section { border:1px solid red; display:inline; float:left; width:460px }
+	header.global h1 { background:url(../img/logo-koha.png) no-repeat; height:250px; margin-left:-50px; width:560px; }
+	header.global h2 { color:#f2b30d; font:2em 'TradeGothicLTStdBoldRegular', Arial, sans-serif; margin:-0.75em 0 1em; text-align:center; text-shadow: 2px 2px 5px rgba(0,0,0,0.7); text-transform:uppercase; width:450px }
+	
+	/* SIGNUP & APP LINKS */
+	nav.signup { margin-left:27px; z-index:999 }
+		nav.signup li { margin-right:6px; }
+	
+#content-main { background:#f7f7f6; line-height:1.5em; padding-top:3em}
+	#identity h1 { font:3em 'TradeGothicLTStdBoldRegular', Arial, sans-serif; text-transform:uppercase; }
+	#identity h2 { color:#537700; font:1.6em 'TradeGothicLTStdBoldRegular', Arial, sans-serif; margin:-0.2em 0 0.75em  }
+	
+	/* EXAMPLE USES */
+	#examples { overflow:hidden; padding:2.5em 0 1.5em;}
+		#examples h3 { clear:both; color:#e2a80f; font-size:2em; margin-bottom:0.75em; text-align:center}
+		#examples li { float:left; font-size:1.1em; list-style-type:none; text-align:center; text-transform:lowercase; width:12.5%}
+		#examples li span { display:block; margin:0 auto;  margin-bottom:1em; height:65px; width:80px;
+			background-image: url(../img/icons-examples.png);
+			background-position: no-repeat;
+			-moz-background-size: 100%;
+			-webkit-background-size: 100%;
+			-o-background-size: 100%;
+			background-size: 100%;
+			}
+		.dining span { background-position:0% 0%; }
+		.coffee span { background-position:0% -100%; }
+		.tickets span { background-position:0% -200%; }
+		.drinks span { background-position:0% -300%; }
+		.gifts span { background-position:0% -400%; }
+		.taxis span { background-position:0% -500%; }
+		.trips span { background-position:0% -600%; }
+		.more span { background-position:0% -700%; }
+		
+	/* TESTIMONIALS */
+	#testimonials { padding:1em 0 2em }
+		#testimonials hgroup { margin-bottom:1em; text-align:center; text-transform:uppercase}
+		#testimonials h3 { color:#e2a80f; font:2.3em 'TradeGothicLTStdBoldRegular', Arial, sans-serif; margin:0; text-align:center; }
+		#testimonials h4 { font-size:0.8em; margin-top:-0.25em}
+		#testimonials li { height:300px; margin:0 10px 10px 0; overflow:hidden; position:relative; width:300px; }
+			#testimonials li blockquote.teaser { background:#000; background:rgba(0,0,0,0.8); bottom:0; color:#fff; height:3.5em; line-height:1.3em; padding:1em; position:absolute; } 
+			#testimonials li blockquote.full { background:#e2a80f; color:#604600; height:100%; padding:25px; position:absolute; top:300px; width:250px;
+				-webkit-transition: top 1s ease;
+				-moz-transition: top 1s ease;
+				-o-transition: top 1s ease;
+				-ms-transition: top 1s ease;
+				transition: top 1s ease;}
+			#testimonials li blockquote.active { top:0; }
+			#testimonials footer { background:url(../img/ornament.png) no-repeat center bottom; font:1.4em 'TradeGothicLTStdBoldRegular', Arial, sans-serif; padding:1em 0 1.5em; text-align:center; text-transform:uppercase}
+		
+		/* TALLY */
+		#social { padding-top:1em}
+		#social h3 { line-height:1em; text-align:center; }
+		#social h3 strong { display:block; color:#e2a80f; font:3em 'TradeGothicLTStdBoldRegular', Arial, sans-serif; }
+		#social h3 sup { font-size:0.4em; padding:0 0.2em; position:relative; top:-1em; vertical-align:baseline;}
+		#social h3 span.logo { background-position:0 -125px; display:inline-block; height:90px; position:relative; top:-1.4em; text-indent:-9999px; width:138px; }
+
+
+/*
+----------------------------------------------------------
+04. FOOTER
+---------------------------------------------------------- */
+footer.global { padding:2em 0 3em}
+footer.global p { color:#e28603; font-size:0.8em; margin-top:0.6em }
+footer.global p a, footer.global p a:visited { color:#e28603; text-decoration:underline}
+footer.global nav.signup { margin-left:0}
+footer.global p a:hover { color:#fff; }
